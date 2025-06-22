@@ -1,0 +1,10 @@
+{
+  "name": "fishingVideos",
+  "version": "1.0.0",
+  "description": "A website for fishing videos",
+  "main": "index.js",
+  "repository": "https://github.com/Artex3428/fishingVideos.git",
+  "author": "Artex3428",
+  "license": "MIT",
+  "private": false
+}
