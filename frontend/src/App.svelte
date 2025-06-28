@@ -11,11 +11,11 @@
   function logout() { token.set(""); }
 </script>
 
-<nav>
+<nav class="nav">
   {#if authed}
-    <button on:click={() => page = 'list'}>Videos</button>
-    <button on:click={() => page = 'upload'}>Upload</button>
-    <button on:click={logout}>Logout</button>
+    <button class="btn" on:click={() => page = 'list'}>VIDEOS</button>
+    <button class="btn" on:click={() => page = 'upload'}>UPLOAD</button>
+    <button class="btn" on:click={logout}>LOGOUT</button>
   {/if}
 </nav>
 
@@ -26,3 +26,27 @@
 {:else}
   <VideoList />
 {/if}
+
+<style>
+  .nav {
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+  }
+  .btn {
+    background-color: white;
+    border: 0;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .btn:hover {
+    filter: brightness(.9);
+    cursor: pointer;
+  }
+</style>
