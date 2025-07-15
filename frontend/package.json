@@ -1,0 +1,20 @@
+{
+  "name": "fishingVideos",
+  "version": "1.0.0",
+  "description": "A website for fishing videos",
+  "main": "index.js",
+  "repository": "https://github.com/Artex3428/fishingVideos.git",
+  "author": "Artex3428",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
+    "svelte": "^5.34.7",
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
